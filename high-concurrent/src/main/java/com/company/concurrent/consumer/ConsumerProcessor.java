@@ -3,7 +3,6 @@
  */
 package com.company.concurrent.consumer;
 
-import java.util.Formatter;
 import java.util.concurrent.Callable;
 
 /**

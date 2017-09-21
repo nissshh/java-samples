@@ -32,7 +32,7 @@ public class WorkerBatchExecuter {
         String batchedElements = blockingQueue.poll();
         Future<String> returnValues = executorService.submit(new ConsumerProcessor(batchedElements));
         executorService.awaitTermination(2, TimeUnit.MINUTES);
-        String status = returnValues.get();
+        //String status = returnValues.get();
     }
 
 }
